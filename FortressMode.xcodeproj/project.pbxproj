@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2F9F1FFC2F278059004D2F4B /* FortressModeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F1FFB2F278059004D2F4B /* FortressModeProtocol.swift */; };
 		2F9F1FFD2F278059004D2F4B /* FortressModeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F1FFB2F278059004D2F4B /* FortressModeProtocol.swift */; };
+		2F9F1FFF2F278EB9004D2F4B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F1FFE2F278EB3004D2F4B /* README.md */; };
+		2F9F20002F278EB9004D2F4B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F1FFE2F278EB3004D2F4B /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +29,7 @@
 		2F9F1FE02F277D34004D2F4B /* FortressMode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FortressMode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F9F1FF22F277F19004D2F4B /* com.HumbleFoundry.FortressMode.Helper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = com.HumbleFoundry.FortressMode.Helper; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F9F1FFB2F278059004D2F4B /* FortressModeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortressModeProtocol.swift; sourceTree = "<group>"; };
+		2F9F1FFE2F278EB3004D2F4B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -63,6 +66,7 @@
 		2F9F1FD72F277D34004D2F4B = {
 			isa = PBXGroup;
 			children = (
+				2F9F1FFE2F278EB3004D2F4B /* README.md */,
 				2F9F1FFB2F278059004D2F4B /* FortressModeProtocol.swift */,
 				2F9F1FE22F277D34004D2F4B /* FortressMode */,
 				2F9F1FF32F277F19004D2F4B /* com.HumbleFoundry.FortressMode.Helper */,
@@ -180,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F9F1FFC2F278059004D2F4B /* FortressModeProtocol.swift in Sources */,
+				2F9F20002F278EB9004D2F4B /* README.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F9F1FFF2F278EB9004D2F4B /* README.md in Sources */,
 				2F9F1FFD2F278059004D2F4B /* FortressModeProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,6 +384,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = (
+					"\"-sectcreate __TEXT __info_plist $(SRCROOT) /com.HumbleFoundry.FortressMode.Helper/Info.plist\"",
+					"\"-sectcreate __TEXT __launchd_plist $(SRCROOT) /com.HumbleFoundry.FortressMode.Helper/Launchd.plist\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
@@ -389,6 +399,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = (
+					"\"-sectcreate __TEXT __info_plist $(SRCROOT) /com.HumbleFoundry.FortressMode.Helper/Info.plist\"",
+					"\"-sectcreate __TEXT __launchd_plist $(SRCROOT) /com.HumbleFoundry.FortressMode.Helper/Launchd.plist\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
