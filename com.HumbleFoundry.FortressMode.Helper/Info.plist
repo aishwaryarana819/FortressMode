@@ -4,7 +4,7 @@
 <dict>
 	<key>SMAuthorizedClients</key>
 	<array>
-		<string>com.HumbleFoundry.FortressMode</string>
+		<string>identifier "com.HumbleFoundry.FortressMode" and anchor apple generic</string>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>

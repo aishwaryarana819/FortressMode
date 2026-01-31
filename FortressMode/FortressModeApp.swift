@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct FortressModeApp: App {
     var body: some Scene {
-        WindowGroup {
+        MenuBarExtra("Fortress Mode", systemImage: "shield.fill") {
             ContentView()
         }
     }

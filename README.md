@@ -1,2 +1,1 @@
-# AI Usage
-- Structuring of the app
+This is the readme file.

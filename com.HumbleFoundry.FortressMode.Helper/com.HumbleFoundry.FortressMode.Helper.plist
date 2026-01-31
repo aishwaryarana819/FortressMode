@@ -9,5 +9,7 @@
 		<key>com.HumbleFoundry.FortressMode.Helper</key>
 		<true/>
 	</dict>
+    <key>BundleProgram</key>
+    <string>Contents/MacOS/com.HumbleFoundry.FortressMode.Helper</string>
 </dict>
 </plist>
