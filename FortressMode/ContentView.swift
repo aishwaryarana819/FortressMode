@@ -47,6 +47,7 @@ struct ContentView: View {
                     Spacer()
                 }
                 .cornerRadius(10)
+                .padding(.leading, 4)
             }
             .padding()
             
@@ -62,8 +63,10 @@ struct ContentView: View {
                             .cornerRadius(10)
                     }
                     .buttonStyle(.glass)
-                    .background(Color.white.opacity(0.2))
+                    .background(Color.white.opacity(0.1))
                     .cornerRadius(10)
+                    .overlay(RoundedRectangle(cornerRadius: 10)
+                        .stroke(Color.gray.opacity(0.2), lineWidth: 0.9))
                     
                     Button(action: { controller.toggleLockdown(enableLockdown: false) }) {
                         Text("Restore")
@@ -73,8 +76,10 @@ struct ContentView: View {
                             .cornerRadius(10)
                     }
                     .buttonStyle(.glass)
-                    .background(Color.white.opacity(0.2))
+                    .background(Color.white.opacity(0.1))
                     .cornerRadius(10)
+                    .overlay(RoundedRectangle(cornerRadius: 10)
+                        .stroke(Color.gray.opacity(0.2), lineWidth: 0.9))
                 }
                 
                 Button(action: { controller.lockdownAndSleep() }) {
@@ -88,10 +93,13 @@ struct ContentView: View {
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 8)
                     .foregroundColor(.black)
+                    
                 }
                 .buttonStyle(.glass)
                 .background(Color.white.opacity(0.1))
                 .cornerRadius(10)
+                .overlay(RoundedRectangle(cornerRadius: 10)
+                    .stroke(Color.gray.opacity(0.2), lineWidth: 0.9))
             }
             .padding()
             
