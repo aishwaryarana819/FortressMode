@@ -9,7 +9,7 @@ This also happens to be my first time developing an app for macOS.
 
 2. I started googling everything and re-built everything from scratch.
 
-- A Helper Tool is installed that communicates with biomanutil to enable/disable TouchID.
+- A Helper Tool is installed that communicates with bioutil to enable/disable TouchID.
 - The main app lives in the menu bar where you have a few options to choose from -- all basically leading to enabling/disabling TouchID.
 
 # Declaration of AI Usage

@@ -123,6 +123,6 @@ struct ContentView: View {
             .padding()
             .background(Color.gray.opacity(0.05))
         }
-        .frame(width: 250)
+        .frame(width: 600)
     }
 }

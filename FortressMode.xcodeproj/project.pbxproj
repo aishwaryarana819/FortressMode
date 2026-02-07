@@ -499,6 +499,12 @@
 				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = FortressHelper/Info.plist;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					FortressMode/com.HumbleFoundry.FortressHelper.plist,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.HumbleFoundry.FortressHelper;
 				"PRODUCT_BUNDLE_IDENTIFIER[sdk=*]" = com.HumbleFoundry.FortressHelper;
 				PRODUCT_NAME = com.HumbleFoundry.FortressHelper;
@@ -533,6 +539,12 @@
 				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = FortressHelper/Info.plist;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					FortressMode/com.HumbleFoundry.FortressHelper.plist,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.HumbleFoundry.FortressHelper;
 				"PRODUCT_BUNDLE_IDENTIFIER[sdk=*]" = com.HumbleFoundry.FortressHelper;
 				PRODUCT_NAME = com.HumbleFoundry.FortressHelper;
