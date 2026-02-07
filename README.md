@@ -1,6 +1,11 @@
 This is a macOS MenuBar application which makes your mac more secure in public or unsafe environment.
 This also happens to be my first time developing an app for macOS.
 
+# What does it offer?
+- **Lockdown Mode:** Fast Disabling of touchID for enhanced security in privacy-compromised environment.
+- **Restore:** Easy Re-Enabling
+- **Lockdown & Sleep:** Automatic Lockdown -> Sleep -> Automatic Restore at Wake
+
 # How to use it?
 - Mount the dmg file.
 - Move FortressMode.app to /Applications
