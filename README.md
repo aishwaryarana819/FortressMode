@@ -5,8 +5,9 @@ This also happens to be my first time developing an app for macOS.
 - Mount the dmg file.
 - Move FortressMode.app to /Applications
 - Run
+- Allow apps from unknown developers from Settings
 - Install Helper Tool
-- Use as you wish!
+- Use as you need!
 
 # How it works & How I created it?
 - I first tried using AI to get a roadmap & suggestions. I followed it and it was a disaster. But I learned basic functionalities of Swift and how project management, targets, permissions, etc. work on XCode.
