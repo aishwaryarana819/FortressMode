@@ -12,9 +12,36 @@ class FortressController: ObservableObject {
     let helperLabel = "com.HumbleFoundry.FortressHelper"
     
     private var xpcConnection: NSXPCConnection?
+    private var restoreOnWake = false
+    private var wakeObserver: NSObjectProtocol?
 
     init() {
         checkHelperStatus()
+        setupWakeObserver()
+    }
+    
+    deinit {
+        if let obs = wakeObserver {
+            NSWorkspace.shared.notificationCenter.removeObserver(obs)
+        }
+    }
+    
+    private func setupWakeObserver() {
+        wakeObserver = NSWorkspace.shared.notificationCenter.addObserver(
+            forName: NSWorkspace.didWakeNotification,
+            object: nil,
+            queue: .main
+        ) { [weak self] _ in
+            self?.handleWake()
+        }
+    }
+    
+    private func handleWake() {
+        if restoreOnWake {
+            statusMessage = "System Woke: Restoring TouchID..."
+            toggleLockdown(enableLockdown: false)
+            restoreOnWake = false
+        }
     }
 
     func installHelper() {
@@ -108,6 +135,10 @@ class FortressController: ObservableObject {
             return
         }
         
+        if enableLockdown {
+            self.statusMessage = "Disabling TouchID..."
+        }
+        
         proxy.setTouchID(enabled: !enableLockdown) { [weak self] success, msg in
             DispatchQueue.main.async {
                 if success {
@@ -121,12 +152,25 @@ class FortressController: ObservableObject {
     }
     
     func lockdownAndSleep() {
+        restoreOnWake = true
         toggleLockdown(enableLockdown: true)
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            self.sleepSystem()
+        }
+    }
+    
+    private func sleepSystem() {
+        let task = Process()
+        task.launchPath = "/usr/bin/pmset"
+        task.arguments = ["sleepnow"]
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            let script = "tell application \"System Events\" to sleep"
-            NSAppleScript(source: script)?.executeAndReturnError(nil)
+        do {
+            try task.run()
+        } catch {
+            DispatchQueue.main.async {
+                self.statusMessage = "Sleep Failed: \(error.localizedDescription)"
+            }
         }
     }
 }
-

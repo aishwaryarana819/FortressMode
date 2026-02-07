@@ -43,13 +43,9 @@ struct ContentView: View {
                     VStack(alignment: .leading) {
                         Text(controller.isTouchIDEnabled ? "TouchID Enabled" : "TouchID Disabled")
                             .font(.system(size: 12, weight: .semibold))
-                        Text(controller.statusMessage)
-                            .font(.caption)
-                            .foregroundStyle(.secondary)
                     }
                     Spacer()
                 }
-                .background(Color.white.opacity(0.1))
                 .cornerRadius(10)
             }
             .padding()
@@ -66,6 +62,8 @@ struct ContentView: View {
                             .cornerRadius(10)
                     }
                     .buttonStyle(.glass)
+                    .background(Color.white.opacity(0.2))
+                    .cornerRadius(10)
                     
                     Button(action: { controller.toggleLockdown(enableLockdown: false) }) {
                         Text("Restore")
@@ -75,18 +73,25 @@ struct ContentView: View {
                             .cornerRadius(10)
                     }
                     .buttonStyle(.glass)
+                    .background(Color.white.opacity(0.2))
+                    .cornerRadius(10)
                 }
                 
                 Button(action: { controller.lockdownAndSleep() }) {
-                    HStack {
+                    VStack {
                         Text("Lockdown & Sleep")
+                        Text("Auto-Restore on Wake")
+                            .font(.caption2)
+                            .font(.system(size: 8))
+                            .opacity(0.5)
                     }
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 8)
                     .foregroundColor(.black)
-                    .cornerRadius(10)
                 }
                 .buttonStyle(.glass)
+                .background(Color.white.opacity(0.1))
+                .cornerRadius(10)
             }
             .padding()
             
@@ -116,13 +121,14 @@ struct ContentView: View {
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, 6)
                         .foregroundColor(.black)
-                        .cornerRadius(10)
                 }
                 .buttonStyle(.glass)
+                .background(Color.white.opacity(0.2))
+                .cornerRadius(10)
             }
             .padding()
             .background(Color.gray.opacity(0.05))
         }
-        .frame(width: 600)
+        .frame(width: 250)
     }
 }
