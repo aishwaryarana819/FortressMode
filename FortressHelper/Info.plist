@@ -2,19 +2,19 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>CFBundleIdentifier</key>
-    <string>com.HumbleFoundry.FortressHelper</string>
-    <key>CFBundleName</key>
-    <string>FortressHelper</string>
-    <key>CFBundleInfoDictionaryVersion</key>
-    <string>6.0</string>
-    <key>CFBundleExecutable</key>
-    <string>com.HumbleFoundry.FortressHelper</string>
-    <key>CFBundleVersion</key>
-    <string>1.0</string>
-    <key>SMAuthorizedClients</key>
-    <array>
-        <string>identifier "com.HumbleFoundry.FortressMode" and anchor apple generic and certificate leaf[subject.CN] = "Apple Development: aishwaryarana@proton.me (9T347B4PDB)"</string>
-    </array>
+	<key>CFBundleIdentifier</key>
+	<string>com.HumbleFoundry.FortressHelper</string>
+	<key>CFBundleName</key>
+	<string>FortressHelper</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleExecutable</key>
+	<string>com.HumbleFoundry.FortressHelper</string>
+	<key>CFBundleVersion</key>
+	<string>3.6</string>
+	<key>SMAuthorizedClients</key>
+	<array>
+		<string>identifier &quot;com.HumbleFoundry.FortressMode&quot; and anchor apple generic and certificate leaf[subject.CN] = &quot;Apple Development: aishwaryarana@proton.me (9T347B4PDB)&quot;</string>
+	</array>
 </dict>
 </plist>
