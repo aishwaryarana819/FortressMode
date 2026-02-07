@@ -7,14 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F9F1FFC2F278059004D2F4B /* FortressModeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F1FFB2F278059004D2F4B /* FortressModeProtocol.swift */; };
-		2F9F1FFD2F278059004D2F4B /* FortressModeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F1FFB2F278059004D2F4B /* FortressModeProtocol.swift */; };
-		2F9F1FFF2F278EB9004D2F4B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F1FFE2F278EB3004D2F4B /* README.md */; };
-		2F9F20002F278EB9004D2F4B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F1FFE2F278EB3004D2F4B /* README.md */; };
+		2FA0BD902F362E1400B1DED9 /* FortressHelper in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2FA0BD862F362C0B00B1DED9 /* FortressHelper */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2FA0BD922F362E5900B1DED9 /* FortressProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA0BD912F362E5900B1DED9 /* FortressProtocol.swift */; };
+		2FA0BD932F362E5900B1DED9 /* FortressProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA0BD912F362E5900B1DED9 /* FortressProtocol.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2FA0BD8D2F362D7E00B1DED9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F9F1FD82F277D34004D2F4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FA0BD852F362C0B00B1DED9;
+			remoteInfo = FortressHelper;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
-		2F9F1FF02F277F19004D2F4B /* CopyFiles */ = {
+		2F11FC622F373157006CC0AD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LaunchDaemons;
+			dstSubfolderSpec = 1;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FA0BD842F362C0B00B1DED9 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,37 +41,73 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		2FA0BD8F2F362DA200B1DED9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				2FA0BD902F362E1400B1DED9 /* FortressHelper in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2F9F1FE02F277D34004D2F4B /* FortressMode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FortressMode.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F9F1FF22F277F19004D2F4B /* com.HumbleFoundry.FortressMode.Helper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = com.HumbleFoundry.FortressMode.Helper; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F9F1FFB2F278059004D2F4B /* FortressModeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortressModeProtocol.swift; sourceTree = "<group>"; };
-		2F9F1FFE2F278EB3004D2F4B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = README.md; sourceTree = "<group>"; };
+		2FA0BD762F362B3600B1DED9 /* FortressMode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FortressMode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FA0BD812F362B9200B1DED9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2FA0BD862F362C0B00B1DED9 /* FortressHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FortressHelper; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FA0BD912F362E5900B1DED9 /* FortressProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortressProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		2FA0BD9E2F371BF100B1DED9 /* Exceptions for "FortressHelper" folder in "FortressMode" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 2FA0BD752F362B3600B1DED9 /* FortressMode */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		2F11FC642F37316C006CC0AD /* Exceptions for "FortressMode" folder in "Copy Files" phase from "FortressMode" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 2F11FC622F373157006CC0AD /* CopyFiles */;
+			membershipExceptions = (
+				com.HumbleFoundry.FortressHelper.plist,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		2F9F1FE22F277D34004D2F4B /* FortressMode */ = {
+		2FA0BD772F362B3600B1DED9 /* FortressMode */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				2F11FC642F37316C006CC0AD /* Exceptions for "FortressMode" folder in "Copy Files" phase from "FortressMode" target */,
+			);
 			path = FortressMode;
 			sourceTree = "<group>";
 		};
-		2F9F1FF32F277F19004D2F4B /* com.HumbleFoundry.FortressMode.Helper */ = {
+		2FA0BD872F362C0B00B1DED9 /* FortressHelper */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = com.HumbleFoundry.FortressMode.Helper;
+			exceptions = (
+				2FA0BD9E2F371BF100B1DED9 /* Exceptions for "FortressHelper" folder in "FortressMode" target */,
+			);
+			path = FortressHelper;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2F9F1FDD2F277D34004D2F4B /* Frameworks */ = {
+		2FA0BD732F362B3600B1DED9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2F9F1FEF2F277F19004D2F4B /* Frameworks */ = {
+		2FA0BD832F362C0B00B1DED9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -66,10 +120,10 @@
 		2F9F1FD72F277D34004D2F4B = {
 			isa = PBXGroup;
 			children = (
-				2F9F1FFE2F278EB3004D2F4B /* README.md */,
-				2F9F1FFB2F278059004D2F4B /* FortressModeProtocol.swift */,
-				2F9F1FE22F277D34004D2F4B /* FortressMode */,
-				2F9F1FF32F277F19004D2F4B /* com.HumbleFoundry.FortressMode.Helper */,
+				2FA0BD912F362E5900B1DED9 /* FortressProtocol.swift */,
+				2FA0BD812F362B9200B1DED9 /* README.md */,
+				2FA0BD772F362B3600B1DED9 /* FortressMode */,
+				2FA0BD872F362C0B00B1DED9 /* FortressHelper */,
 				2F9F1FE12F277D34004D2F4B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,8 +131,8 @@
 		2F9F1FE12F277D34004D2F4B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2F9F1FE02F277D34004D2F4B /* FortressMode.app */,
-				2F9F1FF22F277F19004D2F4B /* com.HumbleFoundry.FortressMode.Helper */,
+				2FA0BD762F362B3600B1DED9 /* FortressMode.app */,
+				2FA0BD862F362C0B00B1DED9 /* FortressHelper */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,48 +140,51 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2F9F1FDF2F277D34004D2F4B /* FortressMode */ = {
+		2FA0BD752F362B3600B1DED9 /* FortressMode */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F9F1FEB2F277D36004D2F4B /* Build configuration list for PBXNativeTarget "FortressMode" */;
+			buildConfigurationList = 2FA0BD7E2F362B3800B1DED9 /* Build configuration list for PBXNativeTarget "FortressMode" */;
 			buildPhases = (
-				2F9F1FDC2F277D34004D2F4B /* Sources */,
-				2F9F1FDD2F277D34004D2F4B /* Frameworks */,
-				2F9F1FDE2F277D34004D2F4B /* Resources */,
+				2FA0BD722F362B3600B1DED9 /* Sources */,
+				2FA0BD732F362B3600B1DED9 /* Frameworks */,
+				2FA0BD742F362B3600B1DED9 /* Resources */,
+				2FA0BD8F2F362DA200B1DED9 /* CopyFiles */,
+				2F11FC622F373157006CC0AD /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2FA0BD8E2F362D7E00B1DED9 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				2F9F1FE22F277D34004D2F4B /* FortressMode */,
+				2FA0BD772F362B3600B1DED9 /* FortressMode */,
 			);
 			name = FortressMode;
 			packageProductDependencies = (
 			);
 			productName = FortressMode;
-			productReference = 2F9F1FE02F277D34004D2F4B /* FortressMode.app */;
+			productReference = 2FA0BD762F362B3600B1DED9 /* FortressMode.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2F9F1FF12F277F19004D2F4B /* com.HumbleFoundry.FortressMode.Helper */ = {
+		2FA0BD852F362C0B00B1DED9 /* FortressHelper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F9F1FF62F277F19004D2F4B /* Build configuration list for PBXNativeTarget "com.HumbleFoundry.FortressMode.Helper" */;
+			buildConfigurationList = 2FA0BD8A2F362C0B00B1DED9 /* Build configuration list for PBXNativeTarget "FortressHelper" */;
 			buildPhases = (
-				2F9F1FEE2F277F19004D2F4B /* Sources */,
-				2F9F1FEF2F277F19004D2F4B /* Frameworks */,
-				2F9F1FF02F277F19004D2F4B /* CopyFiles */,
+				2FA0BD822F362C0B00B1DED9 /* Sources */,
+				2FA0BD832F362C0B00B1DED9 /* Frameworks */,
+				2FA0BD842F362C0B00B1DED9 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				2F9F1FF32F277F19004D2F4B /* com.HumbleFoundry.FortressMode.Helper */,
+				2FA0BD872F362C0B00B1DED9 /* FortressHelper */,
 			);
-			name = com.HumbleFoundry.FortressMode.Helper;
+			name = FortressHelper;
 			packageProductDependencies = (
 			);
-			productName = com.HumbleFoundry.FortressMode.Helper;
-			productReference = 2F9F1FF22F277F19004D2F4B /* com.HumbleFoundry.FortressMode.Helper */;
+			productName = FortressHelper;
+			productReference = 2FA0BD862F362C0B00B1DED9 /* FortressHelper */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -140,10 +197,10 @@
 				LastSwiftUpdateCheck = 2620;
 				LastUpgradeCheck = 2620;
 				TargetAttributes = {
-					2F9F1FDF2F277D34004D2F4B = {
+					2FA0BD752F362B3600B1DED9 = {
 						CreatedOnToolsVersion = 26.2;
 					};
-					2F9F1FF12F277F19004D2F4B = {
+					2FA0BD852F362C0B00B1DED9 = {
 						CreatedOnToolsVersion = 26.2;
 					};
 				};
@@ -162,14 +219,14 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2F9F1FDF2F277D34004D2F4B /* FortressMode */,
-				2F9F1FF12F277F19004D2F4B /* com.HumbleFoundry.FortressMode.Helper */,
+				2FA0BD752F362B3600B1DED9 /* FortressMode */,
+				2FA0BD852F362C0B00B1DED9 /* FortressHelper */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2F9F1FDE2F277D34004D2F4B /* Resources */ = {
+		2FA0BD742F362B3600B1DED9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -179,25 +236,31 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2F9F1FDC2F277D34004D2F4B /* Sources */ = {
+		2FA0BD722F362B3600B1DED9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F9F1FFC2F278059004D2F4B /* FortressModeProtocol.swift in Sources */,
-				2F9F20002F278EB9004D2F4B /* README.md in Sources */,
+				2FA0BD932F362E5900B1DED9 /* FortressProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2F9F1FEE2F277F19004D2F4B /* Sources */ = {
+		2FA0BD822F362C0B00B1DED9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F9F1FFF2F278EB9004D2F4B /* README.md in Sources */,
-				2F9F1FFD2F278059004D2F4B /* FortressModeProtocol.swift in Sources */,
+				2FA0BD922F362E5900B1DED9 /* FortressProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2FA0BD8E2F362D7E00B1DED9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FA0BD852F362C0B00B1DED9 /* FortressHelper */;
+			targetProxy = 2FA0BD8D2F362D7E00B1DED9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2F9F1FE92F277D36004D2F4B /* Debug */ = {
@@ -318,19 +381,31 @@
 			};
 			name = Release;
 		};
-		2F9F1FEC2F277D36004D2F4B /* Debug */ = {
+		2FA0BD7F2F362B3800B1DED9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				AUTOMATION_APPLE_EVENTS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_APP_SANDBOX = YES;
+				DEVELOPMENT_TEAM = 9WXJA6T3RG;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FortressMode;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -339,7 +414,14 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.HumbleFoundry.FortressMode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				REGISTER_APP_GROUPS = YES;
+				RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES = NO;
+				RUNTIME_EXCEPTION_ALLOW_JIT = NO;
+				RUNTIME_EXCEPTION_ALLOW_UNSIGNED_EXECUTABLE_MEMORY = NO;
+				RUNTIME_EXCEPTION_DEBUGGING_TOOL = NO;
+				RUNTIME_EXCEPTION_DISABLE_EXECUTABLE_PAGE_PROTECTION = NO;
+				RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = NO;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
@@ -349,19 +431,31 @@
 			};
 			name = Debug;
 		};
-		2F9F1FED2F277D36004D2F4B /* Release */ = {
+		2FA0BD802F362B3800B1DED9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				AUTOMATION_APPLE_EVENTS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_APP_SANDBOX = YES;
+				DEVELOPMENT_TEAM = 9WXJA6T3RG;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FortressMode;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -370,7 +464,14 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.HumbleFoundry.FortressMode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				REGISTER_APP_GROUPS = YES;
+				RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES = NO;
+				RUNTIME_EXCEPTION_ALLOW_JIT = NO;
+				RUNTIME_EXCEPTION_ALLOW_UNSIGNED_EXECUTABLE_MEMORY = NO;
+				RUNTIME_EXCEPTION_DEBUGGING_TOOL = NO;
+				RUNTIME_EXCEPTION_DISABLE_EXECUTABLE_PAGE_PROTECTION = NO;
+				RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = NO;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
@@ -380,30 +481,66 @@
 			};
 			name = Release;
 		};
-		2F9F1FF72F277F19004D2F4B /* Debug */ = {
+		2FA0BD8B2F362C0B00B1DED9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				AUTOMATION_APPLE_EVENTS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				OTHER_LDFLAGS = (
-					"\"-sectcreate __TEXT __info_plist $(SRCROOT) /com.HumbleFoundry.FortressMode.Helper/Info.plist\"",
-					"\"-sectcreate __TEXT __launchd_plist $(SRCROOT) /com.HumbleFoundry.FortressMode.Helper/Launchd.plist\"",
-				);
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				DEVELOPMENT_TEAM = 9WXJA6T3RG;
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = FortressHelper/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HumbleFoundry.FortressHelper;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=*]" = com.HumbleFoundry.FortressHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES = NO;
+				RUNTIME_EXCEPTION_ALLOW_JIT = NO;
+				RUNTIME_EXCEPTION_ALLOW_UNSIGNED_EXECUTABLE_MEMORY = NO;
+				RUNTIME_EXCEPTION_DEBUGGING_TOOL = NO;
+				RUNTIME_EXCEPTION_DISABLE_EXECUTABLE_PAGE_PROTECTION = NO;
+				RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		2F9F1FF82F277F19004D2F4B /* Release */ = {
+		2FA0BD8C2F362C0B00B1DED9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				AUTOMATION_APPLE_EVENTS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				OTHER_LDFLAGS = (
-					"\"-sectcreate __TEXT __info_plist $(SRCROOT) /com.HumbleFoundry.FortressMode.Helper/Info.plist\"",
-					"\"-sectcreate __TEXT __launchd_plist $(SRCROOT) /com.HumbleFoundry.FortressMode.Helper/Launchd.plist\"",
-				);
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				DEVELOPMENT_TEAM = 9WXJA6T3RG;
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = FortressHelper/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HumbleFoundry.FortressHelper;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=*]" = com.HumbleFoundry.FortressHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES = NO;
+				RUNTIME_EXCEPTION_ALLOW_JIT = NO;
+				RUNTIME_EXCEPTION_ALLOW_UNSIGNED_EXECUTABLE_MEMORY = NO;
+				RUNTIME_EXCEPTION_DEBUGGING_TOOL = NO;
+				RUNTIME_EXCEPTION_DISABLE_EXECUTABLE_PAGE_PROTECTION = NO;
+				RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -422,20 +559,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F9F1FEB2F277D36004D2F4B /* Build configuration list for PBXNativeTarget "FortressMode" */ = {
+		2FA0BD7E2F362B3800B1DED9 /* Build configuration list for PBXNativeTarget "FortressMode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2F9F1FEC2F277D36004D2F4B /* Debug */,
-				2F9F1FED2F277D36004D2F4B /* Release */,
+				2FA0BD7F2F362B3800B1DED9 /* Debug */,
+				2FA0BD802F362B3800B1DED9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F9F1FF62F277F19004D2F4B /* Build configuration list for PBXNativeTarget "com.HumbleFoundry.FortressMode.Helper" */ = {
+		2FA0BD8A2F362C0B00B1DED9 /* Build configuration list for PBXNativeTarget "FortressHelper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2F9F1FF72F277F19004D2F4B /* Debug */,
-				2F9F1FF82F277F19004D2F4B /* Release */,
+				2FA0BD8B2F362C0B00B1DED9 /* Debug */,
+				2FA0BD8C2F362C0B00B1DED9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
