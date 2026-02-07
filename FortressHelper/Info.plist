@@ -8,11 +8,13 @@
     <string>FortressHelper</string>
     <key>CFBundleInfoDictionaryVersion</key>
     <string>6.0</string>
+    <key>CFBundleExecutable</key>
+    <string>com.HumbleFoundry.FortressHelper</string>
     <key>CFBundleVersion</key>
     <string>1.0</string>
     <key>SMAuthorizedClients</key>
     <array>
-        <string>identifier "com.HumbleFoundry.FortressMode"</string>
+        <string>identifier "com.HumbleFoundry.FortressMode" and anchor apple generic and certificate leaf[subject.CN] = "Apple Development: aishwaryarana@proton.me (9T347B4PDB)"</string>
     </array>
 </dict>
 </plist>

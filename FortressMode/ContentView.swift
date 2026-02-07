@@ -5,12 +5,24 @@ struct ContentView: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            
-            ZStack {
-                Color.gray.opacity(0.1)
+            HStack {
                 Text("FortressMode")
                     .font(.system(size: 14, weight: .bold))
-                    .padding(.vertical, 10)
+                    .padding([.vertical, .leading], 13)
+                Spacer()
+                Button {
+                    NSApplication.shared.terminate(nil)
+                } label: {
+                    HStack {
+                        Image(systemName: "power")
+                            .font(.subheadline)
+                    }
+                    .padding(.vertical, 6)
+                    .foregroundColor(.black)
+                }
+                .buttonStyle(.accessoryBar)
+                .padding()
+                .cornerRadius(10)
             }
             .frame(height: 40)
             
@@ -38,7 +50,7 @@ struct ContentView: View {
                     Spacer()
                 }
                 .background(Color.white.opacity(0.1))
-                .cornerRadius(8)
+                .cornerRadius(10)
             }
             .padding()
             
@@ -50,37 +62,31 @@ struct ContentView: View {
                         Text("Lockdown")
                             .frame(maxWidth: .infinity)
                             .padding(.vertical, 8)
-                            .background(Color.black.opacity(0.4))
-                            .foregroundColor(.white)
-                            .cornerRadius(8)
+                            .foregroundColor(.black)
+                            .cornerRadius(10)
                     }
-                    .buttonStyle(.plain)
+                    .buttonStyle(.glass)
                     
                     Button(action: { controller.toggleLockdown(enableLockdown: false) }) {
                         Text("Restore")
                             .frame(maxWidth: .infinity)
                             .padding(.vertical, 8)
-                            .background(Color.black.opacity(0.4))
-                            .foregroundColor(.white)
-                            .cornerRadius(8)
+                            .foregroundColor(.black)
+                            .cornerRadius(10)
                     }
-                    .buttonStyle(.plain)
+                    .buttonStyle(.glass)
                 }
                 
                 Button(action: { controller.lockdownAndSleep() }) {
                     HStack {
                         Text("Lockdown & Sleep")
-                        Text("- Auto Restore at wake")
-                            .font(.caption)
-                            .opacity(0.7)
                     }
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 8)
-                    .background(Color.black.opacity(0.4))
-                    .foregroundColor(.white)
-                    .cornerRadius(8)
+                    .foregroundColor(.black)
+                    .cornerRadius(10)
                 }
-                .buttonStyle(.plain)
+                .buttonStyle(.glass)
             }
             .padding()
             
@@ -109,33 +115,14 @@ struct ContentView: View {
                         .font(.system(size: 12))
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, 6)
-                        .background(Color.black.opacity(0.4))
-                        .foregroundColor(.white)
-                        .cornerRadius(8)
+                        .foregroundColor(.black)
+                        .cornerRadius(10)
                 }
-                .buttonStyle(.plain)
+                .buttonStyle(.glass)
             }
             .padding()
             .background(Color.gray.opacity(0.05))
-            
-            VStack(spacing: 10) {
-                Button {
-                    NSApplication.shared.terminate(nil)
-                } label: {
-                    HStack {
-                        Image(systemName: "power")
-                        Text("Quit")
-                    }
-                    .frame(maxWidth: .infinity)
-                    .padding(.vertical, 6)
-                    .background(Color.black.opacity(0.4))
-                    .foregroundColor(.white)
-                    .cornerRadius(8)
-                }
-                .buttonStyle(.plain)
-                .padding()
-            }
         }
-        .frame(width: 300)
+        .frame(width: 250)
     }
 }
