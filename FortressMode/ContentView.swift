@@ -62,7 +62,7 @@ struct ContentView: View {
                             .foregroundColor(.black)
                             .cornerRadius(10)
                     }
-                    .buttonStyle(.glass)
+                    .buttonStyle(.bordered)
                     .background(Color.white.opacity(0.1))
                     .cornerRadius(10)
                     .overlay(RoundedRectangle(cornerRadius: 10)
@@ -75,7 +75,7 @@ struct ContentView: View {
                             .foregroundColor(.black)
                             .cornerRadius(10)
                     }
-                    .buttonStyle(.glass)
+                    .buttonStyle(.bordered)
                     .background(Color.white.opacity(0.1))
                     .cornerRadius(10)
                     .overlay(RoundedRectangle(cornerRadius: 10)
@@ -95,7 +95,7 @@ struct ContentView: View {
                     .foregroundColor(.black)
                     
                 }
-                .buttonStyle(.glass)
+                .buttonStyle(.bordered)
                 .background(Color.white.opacity(0.1))
                 .cornerRadius(10)
                 .overlay(RoundedRectangle(cornerRadius: 10)
@@ -130,7 +130,7 @@ struct ContentView: View {
                         .padding(.vertical, 6)
                         .foregroundColor(.black)
                 }
-                .buttonStyle(.glass)
+                .buttonStyle(.bordered)
                 .background(Color.white.opacity(0.2))
                 .cornerRadius(10)
             }
