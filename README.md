@@ -1,3 +1,6 @@
+# Demo Video for non-mac users who need to vote:
+https://drive.proton.me/urls/NHWAR4DSKW#KfiynUDpAcLN
+
 # 🏰 FortressMode
 FortressMode is a lightweight macOS menu bar utility designed to harden your Mac's security in public or high-risk environments.
 This is my first time developing a macOS app for the first time and it has not been an easy journey but fun; and I learned swift so that's a plus. 
